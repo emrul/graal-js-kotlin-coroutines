@@ -1,4 +1,5 @@
 export function compressGraphQLQuery(query) {
+    // Thanks to https://github.com/jane/gql-compress/blob/master/src/index.ts
     return query
         // replace multiple whitespace with a single
         .replace(/(\b|\B)\s+(\b|\B)/gm, ' ')
